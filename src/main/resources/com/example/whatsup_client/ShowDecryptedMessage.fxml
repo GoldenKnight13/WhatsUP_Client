@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.whatsup_client.DecryptedMessageController"
+            prefHeight="200.0" prefWidth="600.0">
+
+    <ScrollPane prefHeight="100" prefWidth="500" layoutX="30" layoutY="30">
+        <VBox fx:id="messageContainer"/>
+    </ScrollPane>
+
+    <Button fx:id="okButton" text="OK" layoutX="500" layoutY="150"/>
+
+</AnchorPane>

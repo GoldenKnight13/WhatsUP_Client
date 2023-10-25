@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.whatsup_client.LogInController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <Label layoutX="230" layoutY="25" text="Whats UP">
+        <font>
+            <Font name="Arial Rounded MT Bold" size="35"/>
+        </font>
+    </Label>
+
+    <Label fx:id="Message" layoutX="215" layoutY="100">
+        <font>
+            <Font name="Arial Rounded MT Bold" size="15"/>
+        </font>
+    </Label>
+
+    <TextField fx:id="Username" layoutX="150" layoutY="200" prefWidth="300" />
+    <TextField fx:id="Password" layoutX="150" layoutY="250" prefWidth="300" />
+
+    <Button fx:id="Login_Button" layoutX="270" layoutY="320" text="Log in"/>
+
+</AnchorPane>

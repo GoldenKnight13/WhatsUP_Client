@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.whatsup_client.SelectChatController"
+            prefHeight="575.0" prefWidth="600.0">
+
+    <Label layoutX="230" layoutY="25" text="Whats UP" alignment="CENTER">
+        <font>
+            <Font name="Arial Rounded MT Bold" size="35"/>
+        </font>
+    </Label>
+
+    <Label fx:id="myNameLabel" layoutX="275" layoutY="75" alignment="CENTER">
+        <font>
+            <Font name="Arial Rounded MT Bold" size="20"/>
+        </font>
+    </Label>
+
+    <Label text="Online Friends" layoutX="250" layoutY="120">
+        <font>
+            <Font name="Arial Rounded MT Bold" size="15"/>
+        </font>
+    </Label>
+
+    <ScrollPane fx:id="AvailableChats" layoutX="50" layoutY="150" prefWidth="500" prefHeight="350">
+
+        <content>
+            <VBox fx:id="Friends" prefWidth="300">
+            </VBox>
+        </content>
+
+    </ScrollPane>
+
+    <Button fx:id="LogOutButton" text="Log Out" layoutX="480" layoutY="520"/>
+
+</AnchorPane>

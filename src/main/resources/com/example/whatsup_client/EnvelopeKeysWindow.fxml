@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.whatsup_client.EnvelopeKeysController"
+            prefHeight="175.0" prefWidth="300.0">
+
+    <Label text="Keys:" layoutX="110" layoutY="25">
+        <font>
+            <Font name="Arial Rounded MT Bold" size="23"/>
+        </font>
+    </Label>
+
+    <Label text="Key 1:" layoutX="20" layoutY="63">
+        <font>
+            <Font name="Arial Rounded MT Bold" size="15"/>
+        </font>
+    </Label>
+    <TextField fx:id="keyInput1" layoutX="80" layoutY="60"
+               prefWidth="100" prefHeight="26"/>
+
+    <Label text="Key 2:" layoutX="20" layoutY="103">
+        <font>
+            <Font name="Arial Rounded MT Bold" size="15"/>
+        </font>
+    </Label>
+    <TextField fx:id="keyInput2" layoutX="80" layoutY="100"
+               prefWidth="100" prefHeight="26"/>
+
+    <Label fx:id="warningMessage" layoutX="70" layoutY="140"/>
+    <Button fx:id="confirmButton" layoutX="220" layoutY="130" text="Enter"/>
+
+</AnchorPane>

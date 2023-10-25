@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.whatsup_client.ChatWindowController"
+            prefHeight="500.0" prefWidth="500.0">
+
+    <children>
+
+        <Label fx:id="Friend_name" layoutX="200" layoutY="25">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="23"/>
+            </font>
+        </Label>
+
+        <Button fx:id="returnButton" layoutX="30" layoutY="25" text="Return"/>
+
+        <ScrollPane fx:id="Messages"  layoutX="30" layoutY="70" prefHeight="256" prefWidth="418"
+                    fitToWidth="true">
+            <content>
+                <VBox fx:id="vbox_messages" prefHeight="248" prefWidth="412"/>
+            </content>
+        </ScrollPane>
+
+        <Button fx:id="symmetricButton" layoutX="30" layoutY="350" text="Symmetric encryption"/>
+        <Button fx:id="asymmetricButton" layoutX="200" layoutY="350" text="Asymmetric encryption"/>
+
+        <Button fx:id="signatureButton" layoutX="30" layoutY="390" text="Signed document"/>
+        <Button fx:id="envelopeButton" layoutX="200" layoutY="390" text="Digital envelope"/>
+
+        <TextField fx:id="message_input" layoutX="30" layoutY="440"
+                   prefWidth="360" prefHeight="26"/>
+        <Button fx:id="sendButton" layoutX="404" layoutY="440" text="Send"/>
+
+    </children>
+
+</AnchorPane>

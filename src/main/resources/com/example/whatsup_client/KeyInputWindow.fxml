@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.whatsup_client.KeyInputWindowController"
+            prefHeight="130.0" prefWidth="210.0">
+
+    <Label text="Key:" layoutX="20" layoutY="25">
+        <font>
+            <Font name="Arial Rounded MT Bold" size="23"/>
+        </font>
+    </Label>
+
+    <TextField fx:id="keyInput" layoutX="80" layoutY="25"
+               prefWidth="100" prefHeight="26"/>
+    <Label fx:id="warningMessage" layoutX="85" layoutY="60"/>
+    <Button fx:id="confirmButton" layoutX="140" layoutY="90" text="Enter"/>
+
+</AnchorPane>
