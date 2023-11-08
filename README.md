@@ -11,6 +11,7 @@ En la ventana del chat se tiene el nombre de la persona con quien se esta chatea
 + Encriptación asimétrica
 + Firma digital
 + Sobre digital
+<\br>
 En caso de requerir llaves para el cifrado, estas se piden al usuario en una ventana aparte. <\br>
 El cifrado utilizado es César. 
 
